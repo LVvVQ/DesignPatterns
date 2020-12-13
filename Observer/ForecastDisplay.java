@@ -1,10 +1,10 @@
-package com.coco.observer;
+package com.coco.Observer;
 
 /**
  * @author #L
  * @date 2020/12/10
  */
-public class CurrentConditionDisplay implements Observer, Display {
+public class ForecastDisplay implements Observer, Display {
     private float temperature;
     private float humidity;
     private float pressure;
@@ -12,7 +12,7 @@ public class CurrentConditionDisplay implements Observer, Display {
 
     @Override
     public void display() {
-        System.out.println("-----Current conditions-----\n" + temperature + "F degrees\n" + humidity + "% humidity\n" + pressure + " pressure\n");
+        System.out.println("-----Forecast-----\n" + temperature + "F degrees\n" + humidity + "% humidity\n" + pressure + " pressure\n");
     }
 
     @Override

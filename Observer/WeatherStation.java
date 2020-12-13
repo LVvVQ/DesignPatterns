@@ -1,4 +1,4 @@
-package com.coco.observer;
+package com.coco.Observer;
 
 
 public class WeatherStation {

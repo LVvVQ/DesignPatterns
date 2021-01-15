@@ -27,9 +27,9 @@ class Singleton {
     /**
      * 同步代码块,但线程是不安全的,在if判断时还是有可能有多个线程进入,而且排队生成实例降低了效率,所以这种写法根本就是错误的
      *
-     * @return
+     * @return Singleton实例
      */
-    public static synchronized Singleton getSingleton() {
+    public static Singleton getSingleton() {
         if (singleton == null) {
             synchronized (Singleton.class) {
                 singleton = new Singleton();
